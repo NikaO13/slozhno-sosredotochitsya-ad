@@ -98,3 +98,58 @@
 .header__theme-menu-button_active {
   border-color: var(--accent-color);
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 0 40px 0;
+  padding: 0px 10px;
+}
+
+.section__title {
+  color: var(--section-title-color);
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-weight: bold;
+}
+
+.card-list {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__title {
+  color: var(--card-title-color);
+  background-color: var(--card-background);
+  font-weight: 700;
+} 
+
+.card__text-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.pictures__list {
+  display: grid;
+  gap: 10px;
+}
+
+.pictures__image {
+  display: block;
+  object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
+}
