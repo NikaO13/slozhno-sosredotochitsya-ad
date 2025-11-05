@@ -2,12 +2,12 @@
 
 .page {
   background-color: var(--background-color);
-  background-image: var(--background-image);
   color: var(--text-color);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   font-size: 18px;
+  font-family: "IBM Plex mono";
 }
 
 .header {
@@ -123,7 +123,7 @@
   flex-direction: column;
   gap: 50px;
   margin: 0 0 40px 0;
-  padding: 0px 10px;
+  padding: 40px 10px;
 }
 
 .section__title {
@@ -207,7 +207,6 @@
 
   .header__text {
     max-inline-size: 364px;
-    width: 50%;
   }
 
   .main {
@@ -229,7 +228,6 @@
   .section__title {
     max-width: 236px;
     min-width: 236px;
-    margin: 0;
   }
 
   .what_reduces .card-list {
@@ -240,7 +238,7 @@
 
   .decorated-zone::before {
     inset-block-start: 20px;
-  inset-inline-end: 20px;
+    inset-inline-end: 20px;
   }
 
   .decorated-zone::after {
@@ -287,7 +285,6 @@
   .footer {
     padding: 20px;
     min-block-size: 1024px;
-    font-size: 120px;
   }
 }
 
