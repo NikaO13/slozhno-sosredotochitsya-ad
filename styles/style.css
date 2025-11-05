@@ -179,3 +179,196 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
 }
+
+@media (min-width: 768px) {
+  .header {
+    padding: 20px;
+    min-height: 1024px;
+  }
+
+  .rec {
+    inset-inline-end: 38px;
+    inset-block-start: 20px;
+  }
+  
+  .header__title {
+    margin-inline-start: -20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__text {
+    max-inline-size: 364px;
+    width: 50%;
+  }
+
+  .main {
+    padding: 60px 20px;
+    gap: 80px;
+  }
+
+  .reasons,
+  .solutions {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .reasons {
+    flex-direction: column;
+  }
+
+  .section__title {
+    max-width: 236px;
+    min-width: 236px;
+    margin: 0;
+  }
+
+  .what_reduces .card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .pictures__image {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .picture__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .picturies_list {
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas:
+      "picture-1 picture-2 picture-2"
+      "picture-4 picture-3 picture-2"
+      "picture-4 picture-5 picture-5";
+  }
+
+  .picture-1 {
+    grid-area: picture-1;
+  }
+
+  .picture-2 {
+    grid-area: picture-2;
+  }
+
+  .picture-3 {
+    grid-area: picture-3;
+  }
+
+  .picture-4 {
+    grid-area: picture-4;
+  }
+
+  .picture-5 {
+    grid-area: picture-5;
+  }
+
+  .footer {
+    padding: 20px;
+    min-block-size: 1024px;
+    font-size: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+    width: 1024px;
+  }
+
+  .header {
+    min-block-size: 768px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3;
+  }
+
+  .header__theme-menu {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__title {
+    grid-row: 2;
+    grid-column: 1 / 4;
+  }
+
+  .header__text {
+    grid-row: 3;
+    grid-column: 1 / 4;
+  }
+
+  .reasons,
+  .solutions {
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .reasons .card-list,
+  .what_reduces .card-list {
+    grid-column: 2;
+  }
+
+  .what_reduces .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  .pictures__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .pictures__image:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .pictures__image:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+
+  .pictures__image:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+  }
+
+  .pictures__image:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .pictures__image:nth-child(5) {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+  
+  .footer {
+    min-block-size: 768px;
+  }
+}
