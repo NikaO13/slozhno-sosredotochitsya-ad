@@ -70,7 +70,6 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   font-weight: 700;
   line-height: 0.83;
-  margin-top: 65px;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
@@ -255,13 +254,7 @@
     object-position: center;
   }
 
-  .picture__list {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 20px;
-  }
-
-  .picturies_list {
+  .pictures__list {
     margin-top: 10px;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
