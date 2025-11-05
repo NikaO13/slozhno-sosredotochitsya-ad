@@ -130,6 +130,7 @@
   color: var(--section-title-color);
   margin: 0 0 20px 0;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .card-list {
@@ -143,16 +144,16 @@
   gap: 10px;
 }
 
-.card1 {
-  font-weight: 400;
-  color: none;
-}
-
 .card__title {
   color: var(--card-title-color);
   background-color: var(--card-background);
   font-weight: 700;
 } 
+
+.card1 {
+  font-weight: 400;
+  color: none;
+}
 
 .card__text-link {
   text-decoration: none;
@@ -181,7 +182,7 @@
   position: relative;
   display: grid;
   place-items: center;
-  padding: 10px;
+  padding: 0 10px 0;
   block-size: 100vh;
   min-block-size: 668px;
 }
