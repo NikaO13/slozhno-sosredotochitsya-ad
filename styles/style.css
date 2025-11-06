@@ -36,7 +36,7 @@
   background: var(--accent-color);
   position: absolute;
   inset-inline-end: -19px;
-  inset-block-start: 9px;
+  inset-block-start: 8px;
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
