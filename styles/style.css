@@ -182,7 +182,7 @@
   position: relative;
   display: grid;
   place-items: center;
-  padding: -10px 10px 0;
+  padding: 0 10px 0;
   block-size: 100vh;
   min-block-size: 668px;
 }
