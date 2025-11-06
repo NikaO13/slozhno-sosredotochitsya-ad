@@ -122,7 +122,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin: 0 0 40px 0;
+  margin: 0;
   padding: 40px 10px;
 }
 
@@ -168,7 +168,6 @@
 
 .pictures__list {
   display: grid;
-  gap: 10px;
 }
 
 .pictures__image {
@@ -237,7 +236,6 @@
 
   .what_reduces .card-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
